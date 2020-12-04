@@ -18,3 +18,22 @@ close.addEventListener('click', () => modal.classList.remove('show-modal'));
 window.addEventListener('click', e =>
   e.target == modal ? modal.classList.remove('show-modal') : false
 );
+
+//jqurey
+$(document).ready(function(){
+    const toggle = $('#toggle');
+    const open =$('open');
+    const close = $('close');
+    const modal -$('modal');
+toggle.click(function(){
+    $('body').toggleClass('show-nav');
+});
+
+open.click(function(){
+    modal.addClass('show-modal');
+})
+close.click(function(){
+    close.removeClass('show-modal');
+})
+                  
+});
